@@ -1,1 +1,21 @@
-<p>xyz works!</p>
+<p>Re produccion de audio de forma nativa</p>
+<audio  [controls]="true"  [controlsList]="'nodownload'" [loop]="true"  [autoplay]="true"  >
+    <source src="http://localhost:3000/tracks/623fdcd38b7a2737e01e2941" 
+    type="audio/mp3">
+</audio>
+
+<div class="player">
+    <ngx-audio-player 
+    [playlist]="playlist"
+    [displayTitle]="true"
+    [displayPlaylist]="false" 
+    [pageSizeOptions]="[2,4,6]"
+    [autoPlay]="true" 
+    [displayRepeatControls]="true"
+    [disablePositionSlider]="false"
+    muted="muted"  
+    [expanded]="true"
+    [displayDuration]="false"
+    [displayVolumeControls]="true"
+    ></ngx-audio-player> 
+</div>
